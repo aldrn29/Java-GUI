@@ -1,2 +1,1 @@
-# Java-GUI
-GUI Paint
+# Java-gui-paint
