@@ -27,12 +27,12 @@ public class ButtonPanel extends JFrame{
 	
 	
 	/**
-	 * ê·¸ë¦¼íŒ ìƒë‹¨ ë²„íŠ¼ ìƒì„±
+	 * ±×¸²ÆÇ »ó´Ü ¹öÆ° »ı¼º
 	 */
 	
 	public void buttonJPanel() {
 		
-		// íŒ¨ë„ ìƒì„±
+		// ÆĞ³Î »ı¼º
 		Color back = new Color(95, 95, 95); 									 		
 		bp.setBackground(back);                         			 
 		bp.setBorder(BorderFactory.createRaisedBevelBorder()); 		 
@@ -40,7 +40,7 @@ public class ButtonPanel extends JFrame{
 		bp.setLayout(null);
 		this.add(bp, BorderLayout.NORTH);                      		 
 
-		// ë²„íŠ¼ ìƒì„±
+		// ¹öÆ° »ı¼º
 		button[0] = new JButton();     		      	
 		button[1] = new JButton();        	     
 		button[2] = new JButton();             	
@@ -67,18 +67,18 @@ public class ButtonPanel extends JFrame{
 		button[10].setIcon(new ImageIcon("resource/crop.png"));
 		button[11].setIcon(new ImageIcon("resource/text.png"));
 		
-		button[0].setToolTipText("ì› ì„ íƒ");  			
-		button[1].setToolTipText("ì‚¼ê°í˜• ì„ íƒ");    			
-		button[2].setToolTipText("ì‚¬ê°í˜• ì„ íƒ");  		  	
-		button[3].setToolTipText("ë‘¥ê·¼ì‚¬ê°í˜• ì„ íƒ");    			
-		button[4].setToolTipText("ì˜¤ê°í˜• ì„ íƒ");     
-		button[5].setToolTipText("ë¶“ ì„ íƒ");   
-		button[6].setToolTipText("íœ ì„ íƒ");  
-		button[7].setToolTipText("ì ì„  ì„ íƒ");   
-		button[8].setToolTipText("ì§ì„  ì„ íƒ");   
-		button[9].setToolTipText("ì§€ìš°ê¸° ì„ íƒ");   
-		button[10].setToolTipText("ì„ íƒì˜ì—­ ì§€ìš°ê¸° ì„ íƒ"); 
-		button[11].setToolTipText("í…ìŠ¤íŠ¸ ì„ íƒ"); 
+		button[0].setToolTipText("¿ø ¼±ÅÃ");  			
+		button[1].setToolTipText("»ï°¢Çü ¼±ÅÃ");    			
+		button[2].setToolTipText("»ç°¢Çü ¼±ÅÃ");  		  	
+		button[3].setToolTipText("µÕ±Ù»ç°¢Çü ¼±ÅÃ");    			
+		button[4].setToolTipText("¿À°¢Çü ¼±ÅÃ");     
+		button[5].setToolTipText("º× ¼±ÅÃ");   
+		button[6].setToolTipText("Ææ ¼±ÅÃ");  
+		button[7].setToolTipText("Á¡¼± ¼±ÅÃ");   
+		button[8].setToolTipText("Á÷¼± ¼±ÅÃ");   
+		button[9].setToolTipText("Áö¿ì±â ¼±ÅÃ");   
+		button[10].setToolTipText("¼±ÅÃ¿µ¿ª Áö¿ì±â ¼±ÅÃ"); 
+		button[11].setToolTipText("ÅØ½ºÆ® ¼±ÅÃ"); 
 		
 
 		for (int count = 0; count < button.length; count++) {
@@ -95,12 +95,12 @@ public class ButtonPanel extends JFrame{
 	
 	
 	/**
-	 * text ê¸°ëŠ¥ ì¶”ê°€
+	 * text ±â´É Ãß°¡
 	 */
 
 	public static JTextField text;
 	public static int textofStyle 	= 0;	
-	public static String textofFont = "ê³ ë”•ì²´";	
+	public static String textofFont = "°íµñÃ¼";	
 	public static int textofSize 	= 10;
 	
 	private JFrame frame;
@@ -111,7 +111,7 @@ public class ButtonPanel extends JFrame{
 	
 	static JButton enter;
 
-	private static final String[] fonts 	= { "ê³ ë”•ì²´", "ë‹ì›€ì²´", "ê¶ì„œì²´" };
+	private static final String[] fonts 	= { "°íµñÃ¼", "µ¸¿òÃ¼", "±Ã¼­Ã¼" };
 	private static final String[] styles 	= { "plain", "bold", "tilt" };
 	private static final String[] sizes 	= { "10", "12", "14", "16", "18", "20", "22", "24", "26", "28", 
 			"30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50" };
@@ -126,7 +126,7 @@ public class ButtonPanel extends JFrame{
 		comboLable = new JLabel();
 		comboLable.setLayout(new FlowLayout());
 		
-		text = new JTextField("ë¬¸ìë¥¼ ì…ë ¥í•˜ì„¸ìš”", 15);
+		text = new JTextField("¹®ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä", 15);
 		comboLable.add(text);
 		
 		imagesJComboBox1 = new JComboBox(fonts);
@@ -142,7 +142,7 @@ public class ButtonPanel extends JFrame{
 		imagesJComboBox3.setSelectedIndex(0);
 		
 
-		// í°íŠ¸  ì„¤ì •
+		// ÆùÆ®  ¼³Á¤
 		imagesJComboBox1.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent event) {
 				if (event.getStateChange() == ItemEvent.SELECTED)
@@ -152,7 +152,7 @@ public class ButtonPanel extends JFrame{
 			}
 		});
 		
-		// í°íŠ¸ ìŠ¤íƒ€ì¼ ì„¤ì •
+		// ÆùÆ® ½ºÅ¸ÀÏ ¼³Á¤
 		imagesJComboBox2.addItemListener(new ItemListener() {
 			
 			public void itemStateChanged(ItemEvent event) {
@@ -163,7 +163,7 @@ public class ButtonPanel extends JFrame{
 			}
 		});
 		
-		// í°íŠ¸ ì‚¬ì´ì¦ˆ  ì„¤ì •
+		// ÆùÆ® »çÀÌÁî  ¼³Á¤
 		imagesJComboBox3.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent event) {
 				if (event.getStateChange() == ItemEvent.SELECTED)
@@ -179,10 +179,10 @@ public class ButtonPanel extends JFrame{
 		frame.add(comboLable);
 		
 	
-		// í™•ì¸ ë²„íŠ¼ ìƒì„±
-		enter = new JButton("í™•ì¸");
+		// È®ÀÎ ¹öÆ° »ı¼º
+		enter = new JButton("È®ÀÎ");
 		
-		// í™•ì¸ ë²„íŠ¼ ì´ë²¤íŠ¸ ì—°ê²°
+		// È®ÀÎ ¹öÆ° ÀÌº¥Æ® ¿¬°á
 		enter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Workspace.setDrawMode(11);	
@@ -196,7 +196,7 @@ public class ButtonPanel extends JFrame{
 	
 	
 	/**
-	 * ë²„íŠ¼ ì´ë²¤íŠ¸ ì—°ê²°
+	 * ¹öÆ° ÀÌº¥Æ® ¿¬°á
 	 */
 	
 	class CategoryButton implements ActionListener {
@@ -211,7 +211,7 @@ public class ButtonPanel extends JFrame{
 				}
 			}
 			
-			// í…ìŠ¤íŠ¸ ë²„íŠ¼ ëˆŒë ¸ì„ ë•Œ
+			// ÅØ½ºÆ® ¹öÆ° ´­·ÈÀ» ¶§
 			if (action == button[11])
 				ComboBoxArea();
 			
